@@ -18,15 +18,18 @@ const Layout = ({children}) => {
             font-size: 1.6rem;
             line-height: 1.5;
           }
-          h1, h2, h3 {
+          h1,
+          h2,
+          h3 {
             margin: 0;
             line-height: 1.5;
           }
-          h1, h2 {
-            font-family: 'Roboto', serif;
+          h1,
+          h2 {
+            font-family: "Roboto", serif;
           }
           h3 {
-            font-family: 'PT Sans', sans-serif;
+            font-family: "PT Sans", sans-serif;
           }
           ul {
             list-style: none;
@@ -37,14 +40,20 @@ const Layout = ({children}) => {
       />
       <Helmet>
         <title>Gatsby Hotel</title>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto:400,700&display=swap" rel="stylesheet" />
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto:400,700&display=swap"
+          rel="stylesheet"
+        />
       </Helmet>
 
       <Header />
       {children}
     </>
-  );
+  )
 }
  
 export default Layout;
